@@ -31,20 +31,6 @@ export default function AartiDetail({
   const [isPlaying, setIsPlaying] = useState(false)
   const [copied, setCopied] = useState(false)
 
-  const categoryColors: Record<string, string> = {
-    'गणेश': 'gradient-bg',
-    'विठ्ठल': 'gradient-bg-warm',
-    'शंकर': 'gradient-bg-cool',
-    'कृष्ण': 'gradient-bg-sunset',
-    'राम': 'gradient-bg-ocean',
-    'हनुमान': 'bg-gradient-to-r from-orange-400 to-red-500',
-    'दुर्गा': 'bg-gradient-to-r from-pink-400 to-purple-500',
-    'अंबा': 'bg-gradient-to-r from-rose-400 to-pink-500',
-    'गंगा': 'bg-gradient-to-r from-cyan-400 to-blue-500',
-    'भागवत': 'bg-gradient-to-r from-indigo-400 to-purple-500',
-    'लोटांगण': 'bg-gradient-to-r from-emerald-400 to-teal-500',
-    'मंत्र': 'bg-gradient-to-r from-amber-400 to-orange-500',
-  }
 
   const handlePlay = () => {
     setIsPlaying(!isPlaying)

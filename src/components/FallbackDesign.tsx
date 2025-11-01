@@ -171,8 +171,14 @@ export default function FallbackDesign() {
                   cursor: 'pointer',
                   transition: 'transform 0.2s'
                 }}
-                onMouseOver={(e) => e.target.style.transform = 'scale(1.02)'}
-                onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement
+                  target.style.transform = 'scale(1.02)'
+                }}
+                onMouseOut={(e) => {
+                  const target = e.target as HTMLElement
+                  target.style.transform = 'scale(1)'
+                }}
               >
                 पूर्ण आरती वाचा (Read Full Aarti)
               </button>
